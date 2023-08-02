@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" href="gem.png">
+    <title>Student Login</title>
+    <style>
+        .container{
+            background-color: rgb(247, 250, 253);
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 90px;
+            block-size: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .C1{
+            display: flex;
+            width: 520px;
+            block-size: 350px;
+            margin: 20px 20px;
+            padding: 10px 10px;
+            border-radius: 15px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .C2{
+            height: 400px;
+            width: 470px;
+            background-color: #ae4b988e;
+            display: block;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 450px;
+        }
+        .I1{
+            width: 250px;
+            height: 20px;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 20px 20px;
+            border: none;
+            font-family: 'Montserrat';
+        }
+        .B1{
+            background-color: #D4ADFC;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 30px 20px;
+            border: none;
+            font-family: 'Montserrat';
+        }
+        .B1:hover{
+            background-color: #5C469C;
+            color: white;
+        }
+        p{
+            padding: 10px;
+            margin: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            padding-left: 0px;
+            padding-top: 40px;
+            margin-top: 100px;
+            /* margin-left: 450px; */
+        }
+
+    </style>
+</head>
+<body style="background-color: antiquewhite;  font-family: 'Montserrat'; ">
+    
+        <div class="C2">
+            <p>Welcome...!</p>
+            <form action="loginform.php" method="POST">
+                <input type="text" name="username" placeholder="Username" class="I1">
+                <input type="password" name="pass" placeholder="Password" class="I1" id="myInput"> 
+                <br>
+                <!-- <input type="checkbox" onclick="myFunction()">Show Password
+                <br> -->
+                <a href="loginform.php">
+                    <!-- <input type="button" value="Sigh Up" class="B1"> -->
+                    <input type="submit" value="Sign In" name="login" class="B1">
+                </a>
+                <a href="register.html">
+                    <input type="button" value="Sign Up" class="B1">
+                </a>
+            </form>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+    </script>
+</body>
+</html>
